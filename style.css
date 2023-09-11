@@ -1,0 +1,45 @@
+body {
+    background-color: #f15d82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Times New Roman', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.love-message {
+    font-size: 152px;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    animation: heartbeat 2.5s ease infinite;
+}
+
+.heart {
+    font-size: 76px;
+    color: #f70743;
+    position: absolute;
+    top: 100;
+    right: 100;
+    animation: heartbeat 1s ease infinite;
+    
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
